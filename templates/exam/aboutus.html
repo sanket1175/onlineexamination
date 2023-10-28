@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+    <head>
+        <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+        
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+            position: absolute;
+	        left: 30%;
+	        top: 77%;
+	        transform: translate(-50%, -50%);
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        .column1 {
+            position: absolute;
+	        left: 70%;
+	        top: 77%;
+	        transform: translate(-50%, -50%);
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin: 8px;
+        }
+        
+        .about-section {
+          padding: 50px;
+          text-align: center;
+          background-color: #212529;
+          color: white;
+          line-space:3;
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        .button:hover {
+          background-color: #555;
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        </style>
+    </head>
+    <body>
+      {% include "exam/navbar.html" %}
+        <div class="about-section">
+          <h1>    </h1>
+          <h1>    </h1>
+          <h1>    </h1>
+            <h1>About Examination System</h1>
+            <p>The online Examination portal is a web-based application for technical evaluation.
+              The online examination portal not only replaces paperwork but also releases the workload of faculty.
+              Most of the e-examination (Online Examinations) have fixed number of questions without randomizations,
+              they have pool scalability. Online examination system is increasing rapidly with the change in scenario due to the pandemic,
+              also it seems to be an easy, flexible, and secure methodology to carry the examinations effectively.</p>
+            
+          </div>
+          
+          <h2 style="text-align:center">Our Team</h2>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <center><img src="{%static 'image/sanket.jpg'%}" style="width:30% "></center>
+                <div class="container">
+                  <h2>Shinde Sanket</h2>
+                  <p class="title">Student</p>
+                  <p>Alard Institude Of Management Science ,Pune </p>
+                  <p>shindesanket1175@gmail.com</p>
+                  
+                </div>
+              </div>
+            </div>
+          
+            <div class="column1">
+                  <div class="card">
+                    <center><img src="{%static 'image/rahul.JPG'%}" style="width:30% "></center>
+                  <div class="container">
+                  <h2>Shinde Rahul </h2>
+                  <p class="title">Student</p>
+                  <p>Alard Institude Of Management Science ,Pune </p>
+                  <p>rahulsshinde2000@gmail.com</p>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+    </body>
+    
+    </html>

@@ -1,0 +1,18 @@
+**Log on to codeastro.com for more projects!**
+
+**Developed By Shinde Sanket**
+
+**Instructions**
+- Install the Requirements:
+-Frist install the latest version of the pip to install the pip use command install pip
+-Then type this command and run the command : pip install -r req.txt
+- Then, make database migrations: python manage.py makemigrations
+- python manage.py migrate
+- And finally, run the application: python manage.py runserver
+
+For Admin Account, please create one with superuser!
+- Create superuser use the python manage.py createsuperuser command 
+
+
+**For Contact Us Page**
+Make changes with the email credentials under settings.py
